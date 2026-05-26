@@ -1,0 +1,39 @@
+:root {
+   --bg: #1b1919;
+  --pink: #db2d69;
+  --red: #db372d;
+  --text: #efecec;
+  --text-muted: #a09a9a;
+  --card-bg: #2a2323;
+  --border: #3a3030;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #1b1919;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pink);
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
