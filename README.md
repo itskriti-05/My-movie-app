@@ -1,16 +1,22 @@
-# React + Vite
+# 🎬 CineVault
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and modern movie discovery app built with React and the TMDB API. CineVault lets you explore what's trending, search for any film, and build your own personal movie collection with favorites and a watchlist — all saved locally so nothing gets lost on refresh.
 
-Currently, two official plugins are available:
+## Features
+- 🔥 Browse trending movies updated weekly
+- 🔍 Search any movie from TMDB's massive database
+- ★ Save favorites to revisit anytime
+- 📋 Build a watchlist for movies you plan to watch
+- 🎭 View cast, genres, ratings, runtime & overview
+- 💾 Favorites and watchlist persist via localStorage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React + Vite
+- TMDB API
+- LocalStorage for persistence
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Setup
+```bash
+npm install
+```
+Create a `.env` file in the root:
