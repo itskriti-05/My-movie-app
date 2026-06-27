@@ -37,3 +37,12 @@ button {
 input {
   font-family: inherit;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .desktop-tabs { display: none !important; }
+  .hamburger { display: block !important; }
+}

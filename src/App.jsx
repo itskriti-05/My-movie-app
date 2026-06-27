@@ -112,7 +112,7 @@ useEffect(() => {
 
       {/* search bar */}
       {activeTab === "Search" && (
-        <div style={{ display: "flex", gap: 10, padding: "2rem 3rem 0" }}>
+        <div style={{ display: "flex", gap: 10, padding: "clamp(1rem, 3vw, 2rem) clamp(1rem, 3vw, 3rem) 0" }}>
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
@@ -147,15 +147,7 @@ useEffect(() => {
       )}
 
       {/* search titles */}
-      <h2
-      id="movies-section" 
-        style={{
-          color: "var(--text)",
-          padding: "2rem 3rem 0",
-          fontSize: 22,
-          fontWeight: 800,
-        }}
-      >
+     <h2 id="movies-section" style={{ color: "var(--text)", padding: "clamp(1rem, 3vw, 2rem) clamp(1rem, 3vw, 3rem) 0", fontSize: "clamp(18px, 3vw, 22px)", fontWeight: 800 }}>
         {activeTab === "Trending" && "🔥 Trending This Week"}
         {activeTab === "Search" && "🔍 Search Results"}
         {activeTab === "Favorites" && "★ Your Favorites"}

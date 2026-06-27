@@ -11,10 +11,10 @@ const MovieGrid = ({ movies, onSelect, favorites, watchlist, onToggleFav, onTogg
 
   return (
     <div style={{
-      display: "grid",
-      gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))",
-      gap: 20,
-      padding: "2rem 3rem",
+    display: "grid",
+gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))",
+gap: "clamp(10px, 2vw, 20px)",
+padding: "clamp(1rem, 3vw, 2rem) clamp(1rem, 3vw, 3rem)",
     }}>
 
       {
