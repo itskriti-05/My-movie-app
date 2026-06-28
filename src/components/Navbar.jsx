@@ -3,12 +3,12 @@ import { useState } from "react";
 export default function Navbar({ activeTab, onTabChange, favCount, watchlistCount }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const tabs = [
-    { id: "Trending", label: "Trending" },
-    { id: "Search", label: "Search" },
-    { id: "Favorites", label: `★ ${favCount}` },
-    { id: "Watchlist", label: `📋 ${watchlistCount}` },
-  ];
+ const tabs = [
+  { id: "Trending", label: "Trending" },
+  { id: "Search", label: "Search" },
+  { id: "Favorites", label: `★ Favorites (${favCount})` },
+  { id: "Watchlist", label: `📋 Watchlist (${watchlistCount})` },
+];
 
   return (
     <nav style={{
@@ -19,16 +19,20 @@ export default function Navbar({ activeTab, onTabChange, favCount, watchlistCoun
       padding: "0 1.5rem",
       display: "flex", alignItems: "center",
       justifyContent: "space-between", height: 64,
+      cursor:"pointer",
     }}>
 
       {/* Logo */}
-      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        <div style={{
-          width: 32, height: 32, borderRadius: 8,
-          background: "linear-gradient(135deg, var(--pink), var(--red))",
-          display: "flex", alignItems: "center",
-          justifyContent: "center", fontSize: 16
-        }}>🎬</div>
+      <div  onClick={() => onTabChange("Trending")}  style={{ display: "flex", alignItems: "center", gap: 8 ,   cursor: "pointer",}}>
+         <img
+    src="/logo2.png"   // or /logo.svg
+    alt="Cine Vault Logo"
+    style={{
+      width: 38,
+      height: 38,
+      objectFit: "contain",
+    }}
+  />
         <span style={{
           fontSize: 20, fontWeight: 900, letterSpacing: -0.5,
           background: "linear-gradient(90deg, var(--pink), var(--red))",

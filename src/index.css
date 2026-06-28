@@ -46,3 +46,17 @@ input {
   .desktop-tabs { display: none !important; }
   .hamburger { display: block !important; }
 }
+.modal-top-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .modal-top-row {
+    flex-direction: column;
+  }
+  .modal-poster {
+    width: 100% !important;
+    max-height: 300px;
+  }
+}

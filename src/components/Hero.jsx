@@ -28,13 +28,6 @@ export default function Hero() {
         left: "clamp(1.5rem, 5vw, 4rem)",
         maxWidth: "min(520px, 90vw)",
       }}>
-        <div style={{
-          display: "inline-block",
-          background: "linear-gradient(135deg, var(--pink), var(--red))",
-          color: "#fff", fontSize: 11, fontWeight: 700,
-          padding: "4px 12px", borderRadius: 20,
-          letterSpacing: 2, marginBottom: 16, textTransform: "uppercase"
-        }}>🔥 Now Trending</div>
 
         <h1 style={{
           fontSize: "clamp(28px, 6vw, 52px)",
